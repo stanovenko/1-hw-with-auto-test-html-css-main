@@ -20,115 +20,123 @@
     <!-- a) Заголовок первого уровня со своим ФИО -->
     <h1>Mečislav Stanovenko</h1>
 
-    <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти символов (пробелы и другие знаки припинания тоже считаются символами) -->
-    <p>Учусь в IT-INCUBATOR. Люблю путешествовать, гулять, читать книги и изучать новые технологии в веб-разработке.</p>
+    <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца -->
+    <p>Учусь в IT-INCUBATOR. Люблю путешествовать, гулять и читать.</p>
 
     <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
-    <img src="https://unsplash.it/600/200" alt="Random image">
+    <img src="//unsplash.it/600/200" alt="Random image">
 </section>
 
 <section data-cy="hw1-section-about-pre">
-    <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута сделай так, чтобы твой город всегда был выбранным по умолчанию -->
-    <label for="cities">Выберите город:</label>
+    <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х).
+         Свой город сделай вторым в списке -->
+    <label for="cities">Выберите ваш город:</label>
     <select id="cities" name="cities">
-        <option value="moscow">Москва</option>
-        <option value="your-city" selected>Рига</option>
-        <option value="saint-petersburg">Минск</option>
+        <option value="moscow">Moscow</option>
+        <option value="your-city" selected>Riga</option>
+        <option value="saint-petersburg">Minsk</option>
     </select>
 
     <div data-cy="hw1-unordered-list-box-pre">
-        <section>
-            <h2>Мои любимые фильмы</h2>
-            <ol>
-                <li>Побег из Шоушенка</li>
-                <li>Начало</li>
-                <li>Интерстеллар</li>
-            </ol>
-        </section>
+        <!-- 3) В этом разделе создай 2 дочерних элемента: -->
+
+        <!-- a) Заголовок 2-го уровня -->
+        <h2>Мои любимые книги</h2>
+
+        <!-- b) Маркированный список -->
+        <ul>
+            <li>Гарри Поттер</li>
+            <li>Властелин колец</li>
+            <li>Песнь льда и огня</li>
+        </ul>
+    </div>
+
+    <div data-cy="hw1-ordered-list-box-pre">
+        <!-- 3) В этом разделе создай 2 дочерних элемента: -->
+
+        <!-- a) Заголовок 2-го уровня с другим названием -->
+        <h2>Мои любимые фильмы</h2>
+
+        <!-- b) Нумерованный (упорядоченный) список -->
+        <ol>
+            <li>Побег из Шоушенка</li>
+            <li>Начало</li>
+            <li>Интерстеллар</li>
+        </ol>
     </div>
 
     <div data-cy="hw1-skills-box-pre">
-        <section>
-            <h2>Темы по вёрстке</h2>
+        <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). -->
+        <h2>Мои скиллы</h2>
+        <label>
+            <input type="checkbox" name="topic" value="html" checked>
+            HTML
+        </label><br>
 
-            <label>
-                <input type="checkbox" name="topic" value="html" checked>
-                HTML
-            </label><br>
+        <label>
+            <input type="checkbox" name="topic" value="css" checked>
+            CSS
+        </label><br>
 
-            <label>
-                <input type="checkbox" name="topic" value="css" checked>
-                CSS
-            </label><br>
+        <label>
+            <input type="checkbox" name="topic" value="flexbox">
+            Flexbox
+        </label><br>
 
-            <label>
-                <input type="checkbox" name="topic" value="flexbox">
-                Flexbox
-            </label><br>
+        <label>
+            <input type="checkbox" name="topic" value="grid">
+            Grid Layout
+        </label><br>
 
-            <label>
-                <input type="checkbox" name="topic" value="grid">
-                Grid Layout
-            </label><br>
-
-            <label>
-                <input type="checkbox" name="topic" value="media-queries">
-                Медиа-запросы
-            </label>
-        </section>
-
-        <!-- Поле для ввода нового скилла -->
-        <section>
-            <h2>Добавить новый скилл</h2>
-            <input type="text" placeholder="Новый скилл"> <!-- Однострочное поле ввода с подсказкой -->
-            <button type="button">Добавить</button> <!-- Кнопка для добавления -->
-            <hr> <!-- Горизонтальная линия -->
-        </section>
-
-        <table data-cy="hw-about-table-pre">
-            <!-- 8) В таблице сделай 5 строк и 3 столбца.
-                        - В первой строке ячейки заголовков, в остальных обычные ячейки
-                        - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
-                        - В последнем ряду первая ячейка должна занимать 2 столбца (как должно выглядеть - смотри образец). Таблицу можно заполнять любыми данными -->
-            <table border="1">
-                <!-- Заголовок таблицы -->
-                <tr>
-                    <th>Имя</th>
-                    <th>Возраст</th>
-                    <th>Город</th>
-                </tr>
-
-                <!-- Обычные строки -->
-                <tr>
-                    <td>Анна</td>
-                    <td>24</td>
-                    <td>Москва</td>
-                </tr>
-                <tr>
-                    <td>Иван</td>
-                    <td>30</td>
-                    <td>Казань</td>
-                </tr>
-                <tr>
-                    <td>Олег</td>
-                    <td>27</td>
-                    <td>Новосибирск</td>
-                </tr>
-
-                <!-- Последняя строка с объединением двух столбцов -->
-                <tr>
-                    <td colspan="2">Всего участников</td>
-                    <td>3</td>
-                </tr>
-            </table>
-        </table>
+        <label>
+            <input type="checkbox" name="topic" value="media-queries">
+            Медиа-запросы
+        </label>
     </div>
+
+    <section>
+        <!-- 5) Поле ввода с подсказкой -->
+        <input type="text" placeholder="Новый скилл">
+
+        <!-- 6) Кнопка "Добавить" -->
+        <button type="button">Добавить</button>
+
+        <!-- 7) Горизонтальная линия -->
+        <hr>
+    </section>
+
+    <table data-cy="hw-about-table-pre" border="1">
+        <!-- 8) В таблице сделай 5 строк и 3 столбца -->
+        <tr>
+            <th>Имя</th>
+            <th>Возраст</th>
+            <th>Город</th>
+        </tr>
+        <tr>
+            <td>Анна</td>
+            <td>24</td>
+            <td>Москва</td>
+        </tr>
+        <tr>
+            <td>Иван</td>
+            <td>30</td>
+            <td>Казань</td>
+        </tr>
+        <tr>
+            <td>Олег</td>
+            <td>27</td>
+            <td>Новосибирск</td>
+        </tr>
+        <tr>
+            <td colspan="2">Всего участников</td>
+            <td>3</td>
+        </tr>
+    </table>
 </section>
 
 <footer data-cy="hw-footer-pre">
-    <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
+    <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ -->
     <a href="https://it-incubator.io/" target="_blank">it-incubator</a>
 </footer>
-
 </body>
 </html>
